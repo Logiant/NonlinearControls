@@ -65,10 +65,10 @@ thetaDotS(1) = td0;
 thetaD = thD;
 
 alpha = 2;
-k = 5;
+beta = 5;
 
 S = @(theta, thetaDot) alpha*(theta - thetaD) + thetaDot;
-u = @(S) -k*sign(S);
+u = @(S) -beta*sign(S);
 
 torque = u(S(thetaS(1), thetaDotS(1)));
 
