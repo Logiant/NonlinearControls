@@ -3,7 +3,7 @@ clear; close all; clc;
 global G L;
 G = 9.81; %m/s
 L = G; %m
-th0 = 0; td0 = 0; thD = pi;
+th0 = 0; td0 = 0; thD = pi/4;
 dt = 0.01;
 tf = 40;
 t = 0:dt:tf;

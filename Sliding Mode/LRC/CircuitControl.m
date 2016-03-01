@@ -69,7 +69,7 @@ ecD = eD;
 alpha = 2;
 beta = 5;
 
-S = @(ec, ecDot) alpha*(ec - ecD) + ecDot;
+S = @(ec, ecDot) alpha*(ec - ecD) + (ecDot - 0);
 u = @(S) -beta*sign(S);
 
 input = u(S(ecS(1), ecDotS(1)));
